@@ -1,0 +1,13 @@
+body.bg-batik {
+  background: url('../img/batik.png') repeat;
+  background-size: cover;
+  font-family: 'Merriweather', serif;
+}
+.btn-custom {
+  background-color: #5D4037;
+  color: white;
+}
+.btn-custom:hover {
+  background-color: #FFD700;
+  color: black;
+}
