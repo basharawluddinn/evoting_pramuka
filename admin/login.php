@@ -1,4 +1,6 @@
-<?php include '../config.php'; ?>
+<?php
+include '../config.php';
+?>
 <!DOCTYPE html>
 <html lang="id">
 
@@ -9,17 +11,23 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
     <style>
         body {
-            background: url('../assets/img/batik.png') repeat;
+            background: url('../assets/img/bg.png') repeat;
             background-size: cover;
             font-family: 'Merriweather', serif;
         }
 
         .card-login {
-            background: linear-gradient(145deg, #fff, #f1f1f1);
-            border-radius: 20px;
-            box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.4),
-                -8px -8px 20px rgba(255, 255, 255, 0.6);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background: linear-gradient(145deg, #fdfdfd, #f1f1f1);
+            border-radius: 15px;
+            border-color: white;
+            box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3),
+                -6px -6px 15px rgba(255, 255, 255, 0.5);
+            padding: 20px;
+            width: 100%;
+            max-width: 350px;
+            background: transparent;
+            color: white;
+            /* biar pas di hp */
         }
 
         .card-login:hover {
@@ -42,24 +50,6 @@
             transform: scale(1.05);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
         }
-
-        .password-wrapper {
-            position: relative;
-        }
-
-        .toggle-password {
-            position: absolute;
-            right: 12px;
-            top: 50%;
-            transform: translateY(-50%);
-            cursor: pointer;
-            font-size: 1.2rem;
-            color: #888;
-        }
-
-        .toggle-password:hover {
-            color: #000;
-        }
     </style>
 </head>
 
@@ -79,7 +69,7 @@
                 header("Location: dashboard.php");
                 exit;
             } else {
-                echo "<div class='alert alert-danger'>Username / Password salah!</div>";
+                echo "<div class='alert alert-danger'>❌ Username / Password salah!</div>";
             }
         }
         ?>
@@ -101,7 +91,7 @@
             <button class="btn btn-custom w-100">Login</button>
         </form>
         <div class="text-center mt-3">
-            <a href="../index.php" class="text-muted small">Kembali ke Login Siswa</a>
+            <a href="../index.php" class="text-light">⬅ Kembali ke Login Siswa</a>
         </div>
     </div>
 
@@ -113,7 +103,6 @@
             const type = passwordInput.type === "password" ? "text" : "password";
             passwordInput.type = type;
 
-            // ganti ikon mata
             this.classList.toggle("bi-eye");
             this.classList.toggle("bi-eye-slash");
         });

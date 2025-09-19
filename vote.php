@@ -237,7 +237,7 @@ if ($siswa['sudah_memilih']) {
 
     <!-- Footer -->
     <footer>
-        &copy; <?= date('Y') ?> SMA Islam Terpadu Auladi Islami - E-Voting Rama Sinta
+        &copy; <?= date('Y') ?> SMA Islam Terpadu Auladi Islami - E-Voting Rama Sinta <br> &copy; author : Bashar Awaluddin Nafsah
     </footer>
 
     <!-- Konfirmasi sebelum submit -->

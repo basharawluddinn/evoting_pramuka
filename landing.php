@@ -41,6 +41,7 @@ if (!isset($_SESSION['siswa'])) {
             height: 50px;
         }
 
+
         .profile {
             display: flex;
             align-items: center;
@@ -100,12 +101,16 @@ if (!isset($_SESSION['siswa'])) {
         }
 
         footer ul li a:hover {
-            color: red;
+            color: black;
+        }
+
+        footer p:hover {
+            color: white;
         }
 
         footer ul li a {
             text-decoration: none;
-            color: white;
+            color: red;
         }
 
         footer h5 {
@@ -158,6 +163,7 @@ if (!isset($_SESSION['siswa'])) {
             background-color: aliceblue;
             border-color: black;
         }
+
         .dropdown button:hover {
             border-color: #FFD700;
         }
@@ -235,46 +241,114 @@ if (!isset($_SESSION['siswa'])) {
     </div>
 
 
-    <!-- Konten -->
-    <div class="container content">
-        <div class="row text-center">
-            <div class="col-md-4 mb-4">
-                <div class="card card-custom shadow-sm">
-                    <img src="assets/img/pemilu1.jpg" class="card-img-top" alt="Pemilu">
-                    <div class="card-body">
-                        <h5 class="card-title">Proses Demokratis</h5>
-                        <p class="card-text">Pemilihan dilakukan secara jujur, adil, dan transparan dengan sistem
-                            e-voting modern.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card card-custom shadow-sm">
-                    <img src="assets/img/pemilu2.jpg" class="card-img-top" alt="Kandidat">
-                    <div class="card-body">
-                        <h5 class="card-title">Kandidat Terbaik</h5>
-                        <p class="card-text">Kandidat berasal dari siswa pilihan dengan visi dan misi membangun pramuka
-                            yang lebih baik.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card card-custom shadow-sm">
-                    <img src="assets/img/pemilu3.jpg" class="card-img-top" alt="Partisipasi">
-                    <div class="card-body">
-                        <h5 class="card-title">Partisipasi Siswa</h5>
-                        <p class="card-text">Setiap siswa berhak memilih 1 putra dan 1 putri sebagai bentuk kontribusi
-                            nyata.</p>
-                    </div>
+<!-- Konten -->
+<div class="container content">
+    <div class="row text-left">
+        <!-- Card 1: Tujuan Pemilihan -->
+        <div class="col-md-4 mb-4">
+            <div class="card card-custom shadow-sm h-100">
+                <img src="assets/img/foto2.jpg" class="card-img-top" alt="Pemilu">
+                <div class="card-body">
+                    <h5 class="card-title text-center text-decoration-underline"><b>Tujuan Pemilihan</b></h5>
+                    <p class="card-text mt-3 text-justify">
+                        Pemilihan ini bertujuan untuk memilih <b>Pradana Putra dan Pradana Putri</b> serta pengurus inti masa bakti <b>2025/2026</b>
+                        di Ambalan Sri Rama Wijaya – Rakyan Wara Sinta, Gugus Depan 15.247–15.248. Proses dilakukan melalui <b>e-voting modern</b>
+                        agar lebih jujur, adil, transparan, dan efisien.
+                    </p>
                 </div>
             </div>
         </div>
 
-        <!-- Button Lanjut Memilih -->
-        <div class="text-center mt-4">
-            <a href="vote.php" class="btn btn-custom">Lanjut Memilih</a>
+        <!-- Card 2: Kandidat -->
+        <div class="col-md-4 mb-4">
+            <div class="card card-custom shadow-sm h-100">
+                <img src="assets/img/foto1.png" class="card-img-top" alt="Kandidat">
+                <div class="card-body">
+                    <h5 class="card-title text-center text-decoration-underline"><b>Kandidat Terbaik</b></h5>
+                    <ol class="card-text mt-3 text-justify">
+                        <li>Aktif dalam kegiatan Ambalan & Gugus Depan.</li>
+                        <li>Disiplin, bertanggung jawab, dan berjiwa kepemimpinan.</li>
+                        <li>Menjadi teladan bagi anggota lain.</li>
+                        <li>Memiliki visi & misi membangun Pramuka Penegak lebih baik.</li>
+                        <li>Sudah menjadi Pramuka Penegak Bantara.</li>
+                        <li>Sesuai dengan kriteria dari AD/ART Gerakan Pramuka.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3: Tata Cara -->
+        <div class="col-md-4 mb-4">
+            <div class="card card-custom shadow-sm h-100">
+                <img src="assets/img/foto3.jpg" class="card-img-top" alt="Tata Cara">
+                <div class="card-body">
+                    <h5 class="card-title text-center text-decoration-underline"><b>Tata Cara Pemilihan</b></h5>
+                    <ol class="card-text mt-3 text-justify">
+                        <li>Login dengan NIS & password.</li>
+                        <li>Pilih 1 kandidat putra & 1 kandidat putri.</li>
+                        <li>Klik tombol <b>"Kirim Pilihan"</b>.</li>
+                        <li>Konfirmasi sebelum menyimpan.</li>
+                        <li>Setelah dikirim, suara tidak bisa diubah.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4: Peraturan Umum -->
+        <div class="col-md-6 mb-4">
+            <div class="card card-custom shadow-sm h-100">
+                <img src="assets/img/foto4.jpg" class="card-img-top" alt="Peraturan">
+                <div class="card-body">
+                    <h5 class="card-title text-center text-decoration-underline"><b>Peraturan Umum</b></h5>
+                    <ol class="card-text mt-3 text-justify">
+                        <li>Setiap siswa hanya memiliki satu hak suara: 1 suara untuk putra dan 1 suara untuk putri.</li>
+                        <li>Tidak boleh memilih lebih dari 1 kandidat pada kategori yang sama.</li>
+                        <li>Password dan pilihan harus dijaga kerahasiaannya.</li>
+                        <li>Segala bentuk kecurangan akan diberikan sanksi.</li>
+                        <li>Pemilihan dilakukan online secara aman & transparan.</li>
+                        <li>Pengurus akan mengecek nama serta NIS siswa untuk mencegah kecurangan.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 5: Harapan -->
+        <div class="col-md-6 mb-4">
+            <div class="card card-custom shadow-sm h-100">
+                <img src="assets/img/foto5.jpg" class="card-img-top" alt="Harapan">
+                <div class="card-body">
+                    <h5 class="card-title text-center text-decoration-underline"><b>Harapan</b></h5>
+                    <ol class="card-text mt-3 text-justify">
+                        <li>Menjadi teladan bagi anggota.</li>
+                        <li>Memimpin dengan disiplin & tanggung jawab.</li>
+                        <li>Menghidupkan semangat Ambalan.</li>
+                        <li>Membawa Gudep 15.247 – 15.248 lebih berprestasi.</li>
+                        <li>Menjadi pelopor melalui Pramuka agar anggota termotivasi meraih PTN impian.</li>
+                        <li>Menerapkan dan menjunjung tinggi Tri Satya dan Dasa Dharma.</li>
+                        <li>Melaksanakan Adat Ambalan sesuai aturan yang berlaku.</li>
+                    </ol>
+                </div>
+            </div>
         </div>
     </div>
+
+    <!-- Div Penegasan -->
+    <div class="card card-custom shadow-sm mt-4">
+        <div class="card-body text-center">
+            <h5 class="card-title text-danger"><b>📌 Penting!</b></h5>
+            <p class="card-text">
+                Setelah memahami <b>ketentuan, tata cara, dan peraturan</b> di atas, 
+                silakan klik tombol <b>"Lanjut Memilih"</b> untuk memberikan hak suara Anda.
+            </p>
+        </div>
+    </div>
+
+    <!-- Button Lanjut Memilih -->
+    <div class="text-center mt-4">
+        <a href="vote.php" class="btn btn-custom">Lanjut Memilih</a>
+    </div>
+</div>
+
 
     <!-- Footer -->
     <footer>
